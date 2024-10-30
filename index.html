@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Photos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <input type="file" id="myfile" accept="image/"></input><br>
+            <div id="imgId">
+                <canvas id="image"></canvas>
+            </div>
+            <h5>Filters</h5>
+            <select id="filterS">
+                <option>none</option>
+                <option>contrast</option>
+                <option>saturate</option>
+                <option>grayscale</option>
+                <option>blur</option>
+                <option>brightness</option>
+                <option>transparency</option>
+                <option>sepia</option>
+            </select><br>
+            <input type="number" id="filterValue" placeholder="Enter filter value"></input><br>
+            <input type="number" id="BorderRadius" placeholder="Border Radius"></input><br>
+            <input type="number" id="BorderWidth" placeholder="Border Width"></input><br>
+            <input type="number" id="Height" placeholder="Image Height"></input><br>
+            <input type="number" id="Width" placeholder="Image Width"></input><br>
+            <h5>Border Colour</h5>
+            <input id="BorderColor" type="color"></input><br>
+            <h5>Border Style</h5>
+            <select id="BorderStyle">
+                <option>solid</option>
+                <option>ridge</option>
+                <option>groove</option>
+                <option>double</option>
+                <option>dotted</option>
+                <option>dashed</option>
+            </select><br>
+            <span id="choose">Submit</span><br>
+        </form>
+        <script src="main.js"></script>
+    </body>
+</html>
